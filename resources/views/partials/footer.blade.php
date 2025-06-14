@@ -49,13 +49,12 @@
                 <div class="col-md-6">
                     <a href="#" class="btn btn-outline-primary text-white">SIGN-UP NOW!</a>
                 </div>
-                <div class="col-md-6 text-end">
-                    <span class="text-primary me-3">FOLLOW US</span>
-                    <a href="#" class="ms-3"><img src="{{ asset('img/footer-facebook.png') }}" alt="Facebook" /></a>
-                    <a href="#" class="ms-3"><img src="{{ asset('img/footer-twitter.png') }}" alt="Twitter" /></a>
-                    <a href="#" class="ms-3"><img src="{{ asset('img/footer-youtube.png') }}" alt="YouTube" /></a>
-                    <a href="#" class="ms-3"><img src="{{ asset('img/footer-pinterest.png') }}" alt="Pinterest" /></a>
-                    <a href="#" class="ms-3"><img src="{{ asset('img/footer-periscope.png') }}" alt="Periscope" /></a>
+                <div class="col-md-6 text-end">                    <span class="text-primary me-3">FOLLOW US</span>
+                    <a href="#" class="ms-3"><img src="{{ asset('images/footer-facebook.png') }}" alt="Facebook" /></a>
+                    <a href="#" class="ms-3"><img src="{{ asset('images/footer-twitter.png') }}" alt="Twitter" /></a>
+                    <a href="#" class="ms-3"><img src="{{ asset('images/footer-youtube.png') }}" alt="YouTube" /></a>
+                    <a href="#" class="ms-3"><img src="{{ asset('images/footer-pinterest.png') }}" alt="Pinterest" /></a>
+                    <a href="#" class="ms-3"><img src="{{ asset('images/footer-periscope.png') }}" alt="Periscope" /></a>
                 </div>
             </div>
         </div>

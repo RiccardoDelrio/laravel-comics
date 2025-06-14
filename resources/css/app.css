@@ -52,3 +52,38 @@
     height: 190px;
     object-fit: cover;
 }
+.card_bg{
+    background-color: transparent;
+    color:white
+}
+.banner {
+    background-color: var(--primary-color);
+
+    ul {
+        display: flex;
+        padding: 40px 0;
+        width: 75%;
+        margin: 0 auto;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            display: flex;
+            align-items: center;
+            color: white;
+
+
+
+            img {
+                height: 55px;
+                width: 50px;
+
+                margin-right: 15px
+            }
+        }
+
+
+    }
+
+}
