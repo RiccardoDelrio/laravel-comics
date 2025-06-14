@@ -1,16 +1,24 @@
 @extends('layout.master')
 
 @section('title', 'Homepage')
+@php
+$cards= config('comics');
+@endphp
 
 @section('content')
-    <div class="container mt-5">
-        <div class="card text-start">
-            <img class="card-img-top" src="holder.js/100px180/" alt="Title" />
-            <div class="card-body">
-                <h4 class="card-title">Title</h4>
-                <p class="card-text">Body</p>
-            </div>
-        </div>
-    </div>
 
+<div class="container py-5">
+    <div class="row g-4">
+        @foreach ($cards as $item)
+            <div class="col-md-4 col-lg-2">
+                <div class="card h-100">
+                    <img src="{{ $item['thumb'] }}" class="card-img-top" alt="{{ $item['title'] }}" />
+                    <div class="card-body">
+                        <p class="card-text text-center">{{ $item['title'] }}</p>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+    </div>
+</div>
 @endsection

@@ -1,71 +1,54 @@
-header {
+:root {
+    --primary-color: #0282f9;
+    --secondary-color: #303030;
+    --background-color: #1c1c1c;
+    --text-footer-color: #626b67;
+}
 
+/* Custom styles that can't be handled by Bootstrap */
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 2rem !important;
+}
 
-    .navbar {
-        height: 120px;
-        padding: 10px 0;
-        max-width: 75%;
-        margin: 0 auto;
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
 
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    background-color: var(--primary-color);
+}
 
-        display: flex;
-        justify-content: space-between;
-        height: 120px;
-        align-items: center;
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
 
+.bg-secondary-dark {
+    background-color: var(--background-color);
+}
 
-        .left {
+.footer-bg {
+    background-image: url('../public/img/footer-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.jumbotron {
+    height: 350px;
+    background-image: url(./img/jumbotron.jpg);
+    background-size: cover;
+}
 
-
-            .logo {
-                height: 80px;
-
-                img {
-                    height: 100%;
-                }
-            }
-
-        }
-
-        .right {
-            height: 100%;
-            display: flex;
-            align-items: center;
-
-            ul {
-                display: flex;
-                list-style: none;
-                height: 100%;
-                align-items: center;
-
-                li {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-bottom: 3px solid white;
-                    height: 100%;
-                    padding: 10px;
-
-                    a {
-                        text-decoration: none;
-                        color: black;
-                    }
-
-                    &:hover {
-                        border-bottom: 3px solid var(--primary-color);
-
-                        a {
-                            color: var(--primary-color);
-                        }
-                    }
-                }
-
-
-            }
-
-
-        }
-    }
-
+/* Card image height consistency */
+.card-img-top {
+    height: 190px;
+    object-fit: cover;
 }
