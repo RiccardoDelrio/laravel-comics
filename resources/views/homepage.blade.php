@@ -20,7 +20,7 @@ $cards= config('comics');
             </div>
         @endforeach
     </div>
-    <div class="btn btn-primary"> Load more</div>
+    <div class="btn btn-primary rounded-0 "> Load more</div>
 </div>
 @include('partials.banner')
 @endsection

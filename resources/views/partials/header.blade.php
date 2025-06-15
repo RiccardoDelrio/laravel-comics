@@ -11,10 +11,10 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end align-content-center" id="navbarNav">
-                <ul class="navbar-nav d-flex align-content-center">
+            <div class="collapse navbar-collapse right justify-content-end " id="navbarNav">
+                <ul class="navbar-nav d-flex align-content-center  ">
                     @foreach ($links as $link)
-                        <li class="nav-item">
+                        <li class="nav-item d-flex align-items-center">
                             <a class="nav-link" href="{{ $link['url'] }}">{{ $link['text'] }}</a>
                         </li>
                     @endforeach
